@@ -1,11 +1,13 @@
 package org.example.dao;
 
 import org.example.entity.Phone;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component(value="pdao")
 public class PhoneDaoImpl implements PhoneDao {
     String uname="postgres";
     String pass="";
