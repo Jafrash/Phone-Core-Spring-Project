@@ -90,14 +90,9 @@ The application supports two configuration approaches:
 - `@Component` annotations on DAO and Service classes
 - `@Configuration` and `@ComponentScan` on UserInterface class
 
-## Setup Instructions
 
-### Prerequisites
-- Java 21 or higher
-- PostgreSQL database
-- Maven
 
-### Steps
+
 
 1. **Clone the repository**
    ```bash
@@ -119,19 +114,6 @@ The application supports two configuration approaches:
    );
    ```
 
-3. **Update Database Credentials**
-   - Edit `PhoneDaoImpl.java`
-   - Update username, password, and URL
-
-4. **Build the Project**
-   ```bash
-   mvn clean install
-   ```
-
-5. **Run the Application**
-   ```bash
-   mvn exec:java -Dexec.mainClass="org.example.ui.UserInterface"
-   ```
 
 ## Usage Examples
 
@@ -200,16 +182,3 @@ PostgreSQL JDBC driver is required (add to pom.xml if missing):
 </dependency>
 ```
 
-## Future Enhancements
-
-- Add Spring Data JPA for simplified data access
-- Implement RESTful API endpoints
-- Add unit and integration tests
-- Implement connection pooling (HikariCP)
-- Add logging framework (SLF4J/Logback)
-- Externalize database configuration to properties file
-- Add pagination for large datasets
-
-## License
-
-This project is for educational purposes.
